@@ -1,3 +1,8 @@
 language: java
 jdk: oraclejdk8
 script: gradle war
+deploy:
+  provider: s3
+  access_key_id: "AKIAJ4PJVZHHHQZDNQZA"
+  secret_access_key: "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"
+  bucket: "teamaurora"
