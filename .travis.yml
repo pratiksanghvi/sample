@@ -3,6 +3,8 @@ jdk: oraclejdk8
 script: gradle war
 deploy:
   provider: s3
-  access_key_id: "AKIAIPWIGYLZT4VJMOAQ"
-  secret_access_key: "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"
+  access_key_id: $AWS_ACCESS_KEY_ID
+  secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: "teamaurora"
+  skip_cleanup: true
+  local_dir: build
