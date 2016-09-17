@@ -7,8 +7,8 @@ deploy:
   secret_access_key: $AWS_SECRET_ACCESS_KEY
   bucket: "teamaurora"
   skip_cleanup: true
-  local_dir: build/libs/
-  upload-dir: builds/java/
+  local_dir: build/libs
+  upload-dir: builds/java
 notifications:
   email:
     recipients:
